@@ -18,6 +18,9 @@ namespace Backend_Assignment_01.Controllers
         // </example>
 
         [HttpGet(template: "Welcome")]
-        public string Welcome() => "Welcome to 5125!";
+        public string Welcome()
+        {
+            return "Welcome to 5125!";
+        }
     }
 }
