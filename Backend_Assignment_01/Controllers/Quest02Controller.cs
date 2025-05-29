@@ -15,10 +15,10 @@ namespace Backend_Assignment_01.Controllers
         /// Returns a greeting message with the inputted name
         /// </returns>
         /// <example>
-        /// GET http://localhost:xx/api/q2/greeting?name=Gary
+        /// GET api/Quest02/Greeting?name=Gary
         /// </example>
         /// <example>
-        /// GET http://localhost:xx/api/q2/greeting?name=Ren%C3%A9e
+        /// GET api/Quest02/Greeting?name=Ren%C3%A9e
         /// </example>
         [HttpGet(template: "Greeting")]
         public string Greeting(string name)
