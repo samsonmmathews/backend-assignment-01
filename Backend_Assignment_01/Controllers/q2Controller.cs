@@ -5,7 +5,7 @@ namespace Backend_Assignment_01.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Quest02Controller : ControllerBase
+    public class q2Controller : ControllerBase
     {
         /// <summary>
         /// Greets the user by name
@@ -15,12 +15,12 @@ namespace Backend_Assignment_01.Controllers
         /// Returns a greeting message with the inputted name
         /// </returns>
         /// <example>
-        /// GET api/Quest02/Greeting?name=Gary
+        /// GET api/q1/greeting?name=Gary
         /// </example>
         /// <example>
-        /// GET api/Quest02/Greeting?name=Ren%C3%A9e
+        /// GET api/q2/greeting?name=Ren%C3%A9e
         /// </example>
-        [HttpGet(template: "Greeting")]
+        [HttpGet(template: "greeting")]
         public string Greeting(string name)
         {
             return $"Hi {name}!";

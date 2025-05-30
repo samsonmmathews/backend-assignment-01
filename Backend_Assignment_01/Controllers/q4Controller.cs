@@ -5,22 +5,21 @@ namespace Backend_Assignment_01.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Quest01Controller : ControllerBase
+    public class q4Controller : ControllerBase
     {
         /// <summary>
-        /// Welcomes the user
+        /// Returns the start of a Knock Knock joke
         /// </summary>
         /// <returns>
-        /// A welcome message
+        /// The output would be the next part of the joke - "Who's there?"
         /// </returns>
         /// <example>
-        /// GET: api/Quest01/Welcome -> "Welcome to 5125!"
+        /// POST api/q4/knockknock
         /// </example>
-
-        [HttpGet(template: "Welcome")]
-        public string Welcome()
+        [HttpPost(template: "knockknock")]
+        public string KnockKnock()
         {
-            return "Welcome to 5125!";
+            return "Who's there?";
         }
     }
 }

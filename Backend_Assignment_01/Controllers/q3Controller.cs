@@ -5,7 +5,7 @@ namespace Backend_Assignment_01.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Quest03Controller : ControllerBase
+    public class q3Controller : ControllerBase
     {
         /// <summary>
         /// Displays the cube of an integer
@@ -15,15 +15,15 @@ namespace Backend_Assignment_01.Controllers
         /// Returns the cube of the integer
         /// </returns>
         /// <example>
-        /// GET api/Quest03/Cube?number=4
+        /// GET api/q3/cube?number=4
         /// </example>
         /// <example>
-        /// GET api/Quest03/Cube?number=-4
+        /// GET api/q3/cube?number=-4
         /// </example>
         /// /// <example>
-        /// GET api/Quest03/Cube?number=10
+        /// GET api/q3/cube?number=10
         /// </example>
-        [HttpGet(template: "Cube")]
+        [HttpGet(template: "cube")]
         public int Cube(int number)
         {
             return (number * number * number);
