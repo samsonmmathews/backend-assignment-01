@@ -15,13 +15,13 @@ namespace Backend_Assignment_01.Controllers
         /// Returns the cube of the integer
         /// </returns>
         /// <example>
-        /// GET api/q3/cube?number=4
+        /// GET api/q3/cube/4
         /// </example>
         /// <example>
-        /// GET api/q3/cube?number=-4
+        /// GET api/q3/cube/-4
         /// </example>
         /// /// <example>
-        /// GET api/q3/cube?number=10
+        /// GET api/q3/cube/10
         /// </example>
         [HttpGet(template: "cube/{number}")]
         public int Cube(int number)
