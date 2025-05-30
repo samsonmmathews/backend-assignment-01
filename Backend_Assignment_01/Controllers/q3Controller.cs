@@ -23,7 +23,7 @@ namespace Backend_Assignment_01.Controllers
         /// /// <example>
         /// GET api/q3/cube?number=10
         /// </example>
-        [HttpGet(template: "cube")]
+        [HttpGet(template: "cube/{number}")]
         public int Cube(int number)
         {
             return (number * number * number);
