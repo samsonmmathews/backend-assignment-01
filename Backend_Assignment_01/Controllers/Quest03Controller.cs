@@ -24,9 +24,9 @@ namespace Backend_Assignment_01.Controllers
         /// GET api/Quest03/Cube?number=10
         /// </example>
         [HttpGet(template: "Cube")]
-        public string Cube(int number)
+        public int Cube(int number)
         {
-            return (number * number * number).ToString();
+            return (number * number * number);
         }
     }
 }
